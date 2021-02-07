@@ -10,11 +10,15 @@ public:
 
 int main()
 {
-  double f(C());     // compilation ok
-                     // you declare a function: arg is TODO
+  double f(C());     // The most unpleasant syntax case:
+                     // You wanted to pass a temporary object,
+                     // but it parsed as function declaration:
+                     // double f ( TODO type );
                  
-  double f((C()));   // compilation failure. TODO
+  double f((C()));   // compilation failure. 
+                     // error: cannot convert 'C' to 'double' in initialization
   
   
-  double f({C()});   // compilation failure. TODO
+  double f({C()});   // compilation failure.
+                     // error: cannot convert '<brace-enclosed initializer list>' to 'double' in initialization
 }
