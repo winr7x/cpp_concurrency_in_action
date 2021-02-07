@@ -17,7 +17,8 @@ int C::x = 1;
 int main()
 {
   std::thread f1(C());    // The most unpleasant syntax case:
-                          // You wanted to pass a temporary object,
+                          // You wanted to pass the temporary object C()
+                          // (callable temporary object with operator())
                           // but it parsed as function declaration:
                           // double f ( C (*)() );
                           // Thread is not started here
