@@ -1,3 +1,5 @@
+// g++ -Wall -Werror -s -std=c++17 src.cpp -pthread -o program
+
 #include <iostream>
 #include <thread>
 
