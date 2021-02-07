@@ -14,7 +14,9 @@ void hello()
     //
     // Example 1:
     //   To display title before some operation like:
-    //     std::cout << "Beginning computations...";
+    //     std::cout << "Beginning computations..." << std::endl;
+                      // without buffer flushing you may encounter a situation when
+                      // both lines are displayed at the same time when computations are finished
     //     computations();
     //     std::cout << " done!\n";
     //   https://stackoverflow.com/questions/22026751/c-force-stdcout-flush-print-to-screen
