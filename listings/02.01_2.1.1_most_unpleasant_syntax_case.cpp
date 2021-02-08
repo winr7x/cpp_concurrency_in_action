@@ -27,10 +27,10 @@ int main()
                           // Thread is started.
                           // Thread represented by operator() method of temporary object
   
-  
   std::thread f3{C()};    // ok (Way 2)
                           // Thread is started
                           // Thread represented by operator() method of temporary object
+                          // {} - syntax of initialization
 
   C c1;                          
   std::thread f4(c1);     // ok
