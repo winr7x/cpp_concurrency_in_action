@@ -4,6 +4,8 @@
 #include <chrono>
 #include <thread>
 
+// The main idea: you can use lambda expression with std::thread
+
 int main()
 {
   // Lambda thread function example
