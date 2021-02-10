@@ -1,7 +1,9 @@
-// g++ -Wall -Werror -s -std=c++17 src.cpp -pthread -o program
+// g++ -Os -Wall -Werror -s -std=c++17 src.cpp -pthread -o program
 
 #include <iostream>
 #include <thread>
+
+// The main idea: to show simple example with std::thread
 
 void hello()
 {
