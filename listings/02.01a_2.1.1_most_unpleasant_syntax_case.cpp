@@ -1,6 +1,8 @@
 #include <iostream>
 #include <thread>
 
+// The main idea: show you the most unpleasant syntax case in C++: parsing temporary object as function declaration
+
 class C
 {
 public:
