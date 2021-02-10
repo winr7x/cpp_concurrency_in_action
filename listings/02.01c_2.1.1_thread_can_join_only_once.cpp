@@ -1,9 +1,9 @@
-// g++ -Wall -Werror -s -std=c++17 src.cpp -pthread -o program
+// g++ -Os -Wall -Werror -s -std=c++17 src.cpp -pthread -o program
 
 #include <iostream>
 #include <thread>
 
-// The thread object can be joined only once
+// The main idea: call t.join() only once
 
 int main()
 {
