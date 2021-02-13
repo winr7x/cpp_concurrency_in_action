@@ -31,6 +31,6 @@ void hello()
 
 int main()
 {
-    std::thread t(hello);
-    t.join();
+    std::thread t(hello);  // !!HELLO THREAD EXAMPLE!!
+    t.join();              //
 }
