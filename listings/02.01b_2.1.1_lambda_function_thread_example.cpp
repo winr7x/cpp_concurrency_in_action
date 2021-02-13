@@ -9,9 +9,9 @@
 int main()
 {
   // Lambda thread function example
-  std::thread t([]{
-      std::cout << "in thread" << std::endl;
-  });
+  std::thread t([]{                            // !!LAMBDA EXPRESSION!!
+      std::cout << "in thread" << std::endl;   //
+  });                                          //
   // You must decide attach or detach thread at the time of creation
   t.detach();
   
