@@ -34,3 +34,6 @@ int main()
     std::thread t(hello);  // !!HELLO THREAD EXAMPLE!!
     t.join();              //
 }
+
+// Output:
+// Hello Concurrent World
