@@ -4,7 +4,8 @@
 #include <iostream>
 #include <thread>
 
-// The main idea: each thread runs the same code but with different data 
+// The main idea: you can organize text editor where each thread
+// runs the same code (editing) but with different data (filename)
 
 char number = '1';
 
