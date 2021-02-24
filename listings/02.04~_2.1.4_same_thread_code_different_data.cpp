@@ -5,7 +5,7 @@
 #include <thread>
 
 // The main idea: you can organize text editor where each thread
-// runs the same code (editing) but with different data (filename)
+// runs the same code recursively (editing) but with different data (filename)
 
 char number = '1';
 
@@ -55,7 +55,7 @@ void edit_document(std::string const& filename)				// !THE SAME CODE IS EDIT_DOC
 		user_command cmd=get_user_input();
 		if (cmd.type == open_new_document) {
 			std::string const new_name = get_filename_from_user();
-			std::thread t(edit_document, new_name);		// !THE SAME CODE IS EDIT_DOCUMENT()!
+			std::thread t(edit_document, new_name);		// !THE SAME CODE IS EDIT_DOCUMENT() RECURSIVE CALL!
 			t.detach();
 		} else {
 		  process_user_input(cmd);
